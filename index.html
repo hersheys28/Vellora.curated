@@ -411,6 +411,20 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.82);padding:80px 5vw 3
 .footer-col a:hover{color:#fff;}
 .footer-bottom{max-width:1280px;margin:60px auto 0;padding-top:26px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.78rem;color:rgba(255,255,255,.45);}
 
+  /* ============ maps ============ */
+  
+  ```css
+.map-placeholder {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.map-placeholder:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+```
+
 /* ============ FLOATING UI ============ */
 #whatsappFloat{
   position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;
@@ -935,11 +949,20 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.82);padding:80px 5vw 3
       <div class="contact-cards" style="margin-top:26px;">
         <a href="https://wa.me/918459969717" target="_blank" class="contact-card"><div class="ic"><i class="fa-brands fa-whatsapp"></i></div><div><strong>WhatsApp</strong><span>+91 84599 69717 — fastest response</span></div></a>
         <a href="tel:+918459969717" class="contact-card"><div class="ic"><i class="fa-solid fa-phone"></i></div><div><strong>Call Us</strong><span>+91 84599 69717</span></div></a>
-        <a href="mailto:harshadabussiness@gmail.com" class="contact-card"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><strong>Email</strong><span>hello@vellora.com</span></div></a>
-        <a href="https://www.instagram.com/vellora.curated?igsh=Y2F1Zmx3bzFhbWlq" target="_blank" class="contact-card"><div class="ic"><i class="fa-brands fa-instagram"></i></div><div><strong>Instagram</strong><span>@vellora.gifts</span></div></a>
-      </div>
-      <div class="placeholder map-placeholder"><i class="fa-solid fa-map-location-dot"></i><span class="ph-label">Google Maps — Pune / PCMC</span></div>
-    </div>
+        <a href="mailto:harshadabussiness@gmail.com" class="contact-card"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><strong>Email</strong><span>harshadabussiness@gmail.com</span></div></a>
+        <a href="https://www.instagram.com/vellora.curated?igsh=Y2F1Zmx3bzFhbWlq" target="_blank" class="contact-card"><div class="ic"><i class="fa-brands fa-instagram"></i></div><div><strong>Instagram</strong><span>@vellora.curated</span></div></a>
+      ```html
+<a
+  href="tps://www.google.com/maps/search/?api=1&quer"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="placeholder map-placeholder"
+>
+  <i class="fa-solid fa-map-location-dot"></i>
+  <span class="ph-label">Open Google Maps — Pune / PCMC</span>
+</a>
+```
+
     <div class="form-card reveal">
       <h3>Send a Message</h3>
       <form onsubmit="return handleFormSubmit(event,'Message')">
