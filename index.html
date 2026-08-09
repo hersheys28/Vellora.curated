@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vellora — Gifts That Feel Like Home | Luxury Customized Gift Hampers</title>
+<meta name="description" content="Vellora crafts premium, fully customized gift hampers for birthdays, anniversaries, weddings, corporate gifting and more. Same-day delivery in Pune & PCMC, nationwide courier across India.">
+<meta name="keywords" content="Gift Hampers in Pune, Customized Gift Hampers Pune, Luxury Gift Hampers PCMC, Birthday Gift Hampers Pune, Anniversary Gift Hampers, Corporate Gift Hampers India, Personalized Gift Hampers, Premium Gifts India, Same Day Gift Delivery Pune, Gift Hamper Delivery India">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+/* ============ favicon ============ */
+  <link rel="icon" type="image/webp" href="/favicon.webp">
+/* ============ TOKENS ============ */
+:root{
+  --ivory:#F8F6F2;
+  --beige:#E8DED1;
+  --gold:#C9A96A;
+  --gold-dark:#A9824A;
+  --gold-light:#E4CEA0;
+  --charcoal:#2B2B2B;
+  --charcoal-soft:#464339;
+  --white:#FFFFFF;
+  --line: rgba(43,43,43,0.10);
+  --shadow-sm: 0 2px 10px rgba(43,43,43,0.06);
+  --shadow-md: 0 10px 30px rgba(43,43,43,0.10);
+  --shadow-lg: 0 25px 60px rgba(43,43,43,0.16);
+  --radius: 18px;
+  --ease: cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--ivory);
+  color:var(--charcoal);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:600;line-height:1.15;letter-spacing:-0.01em;}
+.eyebrow{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:1.15rem;
+  color:var(--gold-dark);
+  letter-spacing:.04em;
+  margin-bottom:10px;
+  display:inline-block;
+}
+.section{padding:110px 8vw;position:relative;}
+.section-head{max-width:640px;margin:0 auto 56px;text-align:center;}
+.section-head h2{font-size:clamp(2rem,4vw,2.9rem);}
+.section-head p{margin-top:16px;font-size:1.05rem;color:var(--charcoal-soft);line-height:1.7;}
+.container{max-width:1280px;margin:0 auto;}
+::selection{background:var(--gold);color:var(--white);}
+:focus-visible{outline:2px solid var(--gold-dark);outline-offset:3px;}
+
+@media(prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+}
+
+/* ============ RIBBON DIVIDER — signature element ============ */
+.ribbon-divider{
+  display:flex;align-items:center;justify-content:center;gap:18px;
+  margin:0 auto;max-width:340px;
+}
+.ribbon-divider .line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.ribbon-divider .seal{
+  width:34px;height:34px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, var(--gold-light), var(--gold) 55%, var(--gold-dark) 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;color:var(--white);font-size:.85rem;font-weight:700;
+  box-shadow:0 3px 10px rgba(169,130,74,0.4), inset 0 1px 2px rgba(255,255,255,0.5);
+}
+
+/* ============ SCROLL PROGRESS ============ */
+#scrollProgress{
+  position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold-dark),var(--gold));
+  z-index:9999;width:0%;transition:width .1s linear;
+}
+
+/* ============ NAV ============ */
+header#mainNav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:20px 5vw;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:all .35s var(--ease);
+  background:transparent;
+}
+header#mainNav.scrolled{
+  padding:12px 5vw;
+  background:rgba(248,246,242,0.88);
+  backdrop-filter:blur(14px);
+  box-shadow:0 4px 20px rgba(43,43,43,0.06);
+  border-bottom:1px solid var(--line);
+}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;letter-spacing:.02em;color:var(--charcoal);}
+.nav-logo .mark{
+  width:38px;height:38px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, var(--gold-light), var(--gold) 55%, var(--gold-dark) 100%);
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;flex-shrink:0;
+  box-shadow:inset 0 1px 2px rgba(255,255,255,.5);
+}
+.nav-links{display:flex;gap:34px;align-items:center;}
+.nav-links a{font-size:.87rem;font-weight:500;letter-spacing:.03em;text-transform:uppercase;position:relative;padding:4px 0;color:var(--charcoal-soft);transition:color .25s;}
+.nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:var(--gold-dark);transition:width .3s var(--ease);}
+.nav-links a:hover{color:var(--charcoal);}
+.nav-links a:hover::after{width:100%;}
+.nav-actions{display:flex;align-items:center;gap:18px;}
+.icon-btn{position:relative;font-size:1.05rem;color:var(--charcoal);}
+.icon-btn .badge{
+  position:absolute;top:-8px;right:-9px;background:var(--gold-dark);color:#fff;
+  font-size:.62rem;font-weight:700;width:16px;height:16px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:100px;
+  font-size:.85rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;
+  transition:all .3s var(--ease);white-space:nowrap;
+}
+.btn-primary{background:var(--charcoal);color:var(--white);}
+.btn-primary:hover{background:var(--gold-dark);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-gold{background:var(--gold);color:var(--white);}
+.btn-gold:hover{background:var(--gold-dark);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-outline{border:1px solid var(--charcoal);color:var(--charcoal);}
+.btn-outline:hover{background:var(--charcoal);color:#fff;}
+.btn-outline-light{border:1px solid rgba(255,255,255,.6);color:#fff;}
+.btn-outline-light:hover{background:#fff;color:var(--charcoal);}
+.hamburger{display:none;font-size:1.4rem;}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100vh;display:flex;align-items:center;padding:140px 5vw 80px;
+  background:
+    radial-gradient(ellipse 60% 50% at 85% 10%, rgba(201,169,106,0.16), transparent 60%),
+    linear-gradient(180deg, var(--ivory) 0%, var(--beige) 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;width:520px;height:520px;border-radius:50%;
+  border:1px solid rgba(201,169,106,0.35);top:-160px;right:-160px;
+}
+.hero::after{
+  content:'';position:absolute;width:340px;height:340px;border-radius:50%;
+  border:1px solid rgba(201,169,106,0.22);top:-40px;right:60px;
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center;width:100%;max-width:1320px;margin:0 auto;position:relative;z-index:2;}
+.hero-logo{width:96px;height:96px;border-radius:50%;margin-bottom:28px;
+  background:radial-gradient(circle at 35% 30%, var(--gold-light), var(--gold) 55%, var(--gold-dark) 100%);
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md), inset 0 1px 3px rgba(255,255,255,.6);
+  font-family:'Playfair Display',serif;color:#fff;font-size:2.2rem;font-weight:700;
+}
+.hero h1{font-size:clamp(2.6rem,5vw,4.4rem);color:var(--charcoal);}
+.hero h1 em{font-style:italic;color:var(--gold-dark);}
+.hero p.sub{margin:26px 0 38px;font-size:1.2rem;color:var(--charcoal-soft);max-width:480px;line-height:1.6;}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
+.hero-trust{display:flex;gap:34px;margin-top:52px;flex-wrap:wrap;}
+.hero-trust div{display:flex;flex-direction:column;}
+.hero-trust strong{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold-dark);}
+.hero-trust span{font-size:.78rem;color:var(--charcoal-soft);text-transform:uppercase;letter-spacing:.05em;margin-top:2px;}
+
+.hero-visual{position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-lg);}
+.placeholder{
+  width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(135deg,var(--beige),var(--ivory));
+  border:1px dashed rgba(169,130,74,0.4);color:var(--gold-dark);text-align:center;position:relative;
+}
+.placeholder i{font-size:2rem;opacity:.7;}
+.placeholder .ph-label{font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--charcoal-soft);opacity:.75;}
+.placeholder .ph-name{font-family:'Inter',monospace;font-size:.68rem;background:rgba(43,43,43,0.06);padding:4px 10px;border-radius:20px;margin-top:2px;}
+.hero-visual .float-card{
+  position:absolute;bottom:22px;left:22px;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);
+  padding:14px 20px;border-radius:16px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:12px;
+  animation:float 4s ease-in-out infinite;z-index:3;
+}
+.hero-visual .float-card i{color:var(--gold-dark);font-size:1.2rem;}
+.hero-visual .float-card strong{display:block;font-size:.85rem;}
+.hero-visual .float-card span{font-size:.7rem;color:var(--charcoal-soft);}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+
+/* ============ REAL MEDIA (images/videos) ============ */
+/* Fills a positioned container edge-to-edge, e.g. product photos, occasion tiles, hero banner */
+.media-fill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:var(--beige);}
+/* Sits inline at its natural size, e.g. masonry gallery items */
+.media-auto{width:100%;display:block;border-radius:inherit;}
+.gallery-item .placeholder{aspect-ratio:1/1;}
+.gallery-item:nth-child(3n) .placeholder,.gallery-item:nth-child(4n) .placeholder{aspect-ratio:3/4;}
+
+/* fade up utility */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
+.reveal.in{opacity:1;transform:translateY(0);}
+.reveal-stagger > * {opacity:0;transform:translateY(30px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
+.reveal-stagger.in > *{opacity:1;transform:translateY(0);}
+.reveal-stagger.in > *:nth-child(1){transition-delay:.05s;}
+.reveal-stagger.in > *:nth-child(2){transition-delay:.12s;}
+.reveal-stagger.in > *:nth-child(3){transition-delay:.19s;}
+.reveal-stagger.in > *:nth-child(4){transition-delay:.26s;}
+.reveal-stagger.in > *:nth-child(5){transition-delay:.33s;}
+.reveal-stagger.in > *:nth-child(6){transition-delay:.40s;}
+.reveal-stagger.in > *:nth-child(7){transition-delay:.47s;}
+.reveal-stagger.in > *:nth-child(8){transition-delay:.54s;}
+
+/* ============ WHY CHOOSE ============ */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.why-card{
+  background:var(--white);border-radius:var(--radius);padding:34px 26px;text-align:left;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);transition:all .35s var(--ease);
+}
+.why-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:rgba(201,169,106,0.4);}
+.why-card .ic{
+  width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--beige),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--gold-dark);margin-bottom:18px;
+}
+.why-card h4{font-size:1.08rem;margin-bottom:8px;}
+.why-card p{font-size:.88rem;color:var(--charcoal-soft);line-height:1.55;}
+
+/* ============ OCCASIONS ============ */
+.occasion-scroll{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.occasion-card{
+  position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/3.6;cursor:pointer;
+  box-shadow:var(--shadow-sm);transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.occasion-card:hover{transform:translateY(-6px) scale(1.015);box-shadow:var(--shadow-lg);}
+.occasion-card .placeholder{border-radius:0;border:none;}
+.occasion-overlay{
+  position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(43,43,43,0.82) 100%);
+  display:flex;align-items:flex-end;padding:22px;z-index:2;
+}
+.occasion-overlay h4{color:#fff;font-size:1.25rem;}
+.occasion-overlay span{color:var(--gold-light);font-size:.78rem;letter-spacing:.03em;text-transform:uppercase;display:block;margin-top:4px;}
+
+/* ============ BUDGET FILTER ============ */
+.budget-tabs{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:8px;}
+.budget-tab{
+  padding:12px 24px;border-radius:100px;border:1px solid var(--line);background:var(--white);
+  font-size:.85rem;font-weight:600;color:var(--charcoal-soft);transition:all .3s;
+}
+.budget-tab.active,.budget-tab:hover{background:var(--charcoal);color:#fff;border-color:var(--charcoal);}
+
+/* ============ AI GIFT FINDER ============ */
+.quiz-wrap{
+  background:linear-gradient(135deg,var(--charcoal),#1c1c1c);border-radius:28px;padding:64px 5vw;color:#fff;
+  position:relative;overflow:hidden;
+}
+.quiz-wrap::before{content:'';position:absolute;width:420px;height:420px;border-radius:50%;border:1px solid rgba(201,169,106,0.25);top:-200px;left:-140px;}
+.quiz-inner{max-width:640px;margin:0 auto;position:relative;z-index:2;}
+.quiz-progress-bar{height:4px;background:rgba(255,255,255,.15);border-radius:10px;margin-bottom:44px;overflow:hidden;}
+.quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--gold-dark),var(--gold));width:16.6%;transition:width .5s var(--ease);border-radius:10px;}
+.quiz-step{display:none;}
+.quiz-step.active{display:block;animation:fadeIn .5s var(--ease);}
+@keyframes fadeIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.quiz-step .q-num{color:var(--gold);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;}
+.quiz-step h3{font-size:1.9rem;margin:10px 0 30px;}
+.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.quiz-option{
+  padding:18px 20px;border:1px solid rgba(255,255,255,.18);border-radius:14px;font-size:.95rem;font-weight:500;
+  text-align:left;transition:all .25s;color:#fff;display:flex;align-items:center;gap:10px;
+}
+.quiz-option:hover{border-color:var(--gold);background:rgba(201,169,106,0.1);}
+.quiz-option.selected{background:var(--gold);border-color:var(--gold);color:#fff;}
+/* variant for options that carry a photo (e.g. occasion step) */
+.quiz-option.has-img{flex-direction:column;align-items:stretch;padding:12px;gap:10px;}
+.quiz-option.has-img .thumb-wrap{position:relative;width:100%;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:rgba(255,255,255,.06);}
+.quiz-option.has-img .option-label{display:flex;align-items:center;gap:8px;font-size:.9rem;}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:38px;}
+.quiz-nav .btn{padding:12px 22px;}
+.quiz-result{text-align:center;}
+.quiz-result i.big{font-size:2.6rem;color:var(--gold);margin-bottom:18px;}
+.quiz-result h3{font-size:2.1rem;margin-bottom:14px;}
+.quiz-result p{color:rgba(255,255,255,.75);max-width:440px;margin:0 auto 30px;line-height:1.7;}
+
+/* ============ PRODUCTS ============ */
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+.product-card{
+  background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);
+  border:1px solid var(--line);transition:all .35s var(--ease);display:flex;flex-direction:column;
+}
+.product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+.product-media{position:relative;aspect-ratio:1/1;}
+.product-media .placeholder{border:none;border-radius:0;}
+.wish-btn{
+  position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.9);
+  display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--charcoal-soft);
+  box-shadow:var(--shadow-sm);transition:all .25s;z-index:3;
+}
+.wish-btn.active{color:#c0435a;}
+.wish-btn:hover{transform:scale(1.1);}
+.product-badge{position:absolute;top:12px;left:12px;background:var(--gold-dark);color:#fff;font-size:.65rem;letter-spacing:.04em;text-transform:uppercase;padding:5px 11px;border-radius:100px;z-index:3;}
+.product-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.product-body .rating{font-size:.78rem;color:var(--gold-dark);}
+.product-body h4{font-size:1.05rem;}
+.product-body .desc{font-size:.82rem;color:var(--charcoal-soft);line-height:1.5;}
+.product-body .price-row{display:flex;align-items:baseline;gap:8px;margin-top:4px;}
+.product-body .price{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:600;color:var(--charcoal);}
+.product-body .old-price{font-size:.82rem;color:#a3a3a3;text-decoration:line-through;}
+.product-actions{display:flex;gap:10px;margin-top:12px;}
+.product-actions .btn{flex:1;padding:11px 10px;font-size:.72rem;justify-content:center;}
+
+/* ============ TIMELINE ============ */
+.timeline{position:relative;max-width:900px;margin:0 auto;}
+.timeline::before{content:'';position:absolute;left:29px;top:10px;bottom:10px;width:1px;background:linear-gradient(180deg,var(--gold),var(--beige));}
+.tl-item{display:flex;gap:28px;margin-bottom:44px;position:relative;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-num{
+  width:60px;height:60px;border-radius:50%;background:var(--white);border:1px solid var(--gold);color:var(--gold-dark);
+  display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.3rem;flex-shrink:0;
+  box-shadow:var(--shadow-sm);z-index:2;
+}
+.tl-content{padding-top:12px;}
+.tl-content h4{font-size:1.2rem;margin-bottom:6px;}
+.tl-content p{color:var(--charcoal-soft);font-size:.92rem;}
+
+/* ============ CORPORATE ============ */
+.corp-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+.corp-list{display:flex;flex-direction:column;gap:18px;margin-top:28px;}
+.corp-list li{display:flex;align-items:center;gap:14px;font-size:.98rem;color:var(--charcoal-soft);}
+.corp-list li i{color:var(--gold-dark);font-size:1.1rem;width:24px;}
+.form-card{background:var(--white);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow-md);border:1px solid var(--line);}
+.form-card h3{margin-bottom:22px;font-size:1.4rem;}
+.form-row{display:flex;flex-direction:column;gap:7px;margin-bottom:18px;}
+.form-row label{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--charcoal-soft);font-weight:600;}
+.form-row input,.form-row select,.form-row textarea{
+  padding:13px 16px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:.92rem;background:var(--ivory);transition:border .25s;
+}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{border-color:var(--gold-dark);outline:none;background:#fff;}
+.form-row textarea{resize:vertical;min-height:90px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+
+/* ============ AFFILIATE ============ */
+.earn-wrap{background:linear-gradient(135deg,var(--beige) 0%, var(--ivory) 100%);border-radius:28px;padding:64px 5vw;}
+.earn-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:44px 0 56px;}
+.earn-step{text-align:center;padding:28px 18px;}
+.earn-step .n{font-family:'Playfair Display',serif;font-style:italic;font-size:2.4rem;color:var(--gold-dark);}
+.earn-step h4{margin:8px 0;font-size:1.1rem;}
+.earn-step p{font-size:.85rem;color:var(--charcoal-soft);}
+.earn-panels{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.earn-panel{background:#fff;border-radius:16px;padding:28px;box-shadow:var(--shadow-sm);}
+.earn-panel h4{font-size:1rem;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.earn-panel h4 i{color:var(--gold-dark);}
+.commission-box{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px dashed var(--line);font-size:.88rem;}
+.commission-box:last-child{border:none;}
+.commission-box strong{color:var(--gold-dark);font-family:'Playfair Display',serif;font-size:1.1rem;}
+.referral-gen{display:flex;gap:10px;margin-top:14px;}
+.referral-gen input{flex:1;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--ivory);font-size:.85rem;font-family:monospace;}
+
+/* ============ GALLERY (masonry) ============ */
+.gallery-grid{columns:4 240px;column-gap:20px;}
+.gallery-item{break-inside:avoid;margin-bottom:20px;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);position:relative;cursor:pointer;}
+.gallery-item .placeholder{border-radius:0;border:none;}
+.gallery-item .play-ic{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(43,43,43,0.15);opacity:0;transition:opacity .3s;z-index:2;}
+.gallery-item:hover .play-ic{opacity:1;}
+.gallery-item .play-ic i{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;color:var(--charcoal);font-size:1.1rem;}
+
+/* ============ TESTIMONIALS ============ */
+.testi-track{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.testi-card{background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid var(--line);}
+.testi-top{display:flex;align-items:center;gap:14px;margin-bottom:16px;}
+.testi-avatar{
+  width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--beige),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;color:var(--gold-dark);font-family:'Playfair Display',serif;font-weight:700;
+}
+.testi-top strong{display:block;font-size:.95rem;}
+.testi-top .stars{color:var(--gold-dark);font-size:.78rem;}
+.testi-card p{font-size:.92rem;color:var(--charcoal-soft);line-height:1.7;font-style:italic;}
+.google-badge{
+  display:flex;align-items:center;justify-content:center;gap:10px;margin-top:44px;padding:16px;
+  border:1px dashed var(--line);border-radius:14px;color:var(--charcoal-soft);font-size:.85rem;
+}
+
+/* ============ INSTAGRAM ============ */
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+.insta-item{aspect-ratio:1/1;border-radius:12px;overflow:hidden;position:relative;}
+.insta-item .placeholder{border-radius:0;border:none;}
+.insta-item::after{content:'\f16d';font-family:'Font Awesome 6 Brands';position:absolute;bottom:10px;right:10px;color:#fff;font-size:.9rem;opacity:.85;z-index:2;}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+.faq-q{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.98rem;}
+.faq-q i{transition:transform .3s;color:var(--gold-dark);}
+.faq-item.open .faq-q i{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);}
+.faq-a p{padding:0 24px 22px;font-size:.9rem;color:var(--charcoal-soft);line-height:1.65;}
+
+/* ============ CONTACT ============ */
+.contact-wrap{display:grid;grid-template-columns:0.9fr 1.1fr;gap:50px;}
+.contact-cards{display:flex;flex-direction:column;gap:16px;}
+.contact-card{display:flex;align-items:center;gap:16px;background:var(--white);padding:20px 22px;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow-sm);transition:transform .3s;}
+.contact-card:hover{transform:translateX(6px);}
+.contact-card .ic{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--beige),var(--gold-light));display:flex;align-items:center;justify-content:center;color:var(--gold-dark);}
+.contact-card strong{display:block;font-size:.92rem;}
+.contact-card span{font-size:.8rem;color:var(--charcoal-soft);}
+.map-placeholder{margin-top:16px;height:180px;border-radius:14px;}
+
+/* ============ FOOTER ============ */
+footer{background:var(--charcoal);color:rgba(255,255,255,.82);padding:80px 5vw 30px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:40px;max-width:1280px;margin:0 auto;}
+.footer-brand .nav-logo{color:#fff;}
+.footer-brand p{margin-top:16px;font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.7;max-width:280px;}
+.footer-social{display:flex;gap:12px;margin-top:20px;}
+.footer-social a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;transition:all .3s;}
+.footer-social a:hover{background:var(--gold);border-color:var(--gold);}
+.footer-col h5{font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--gold-light);margin-bottom:20px;}
+.footer-col a{display:block;font-size:.87rem;color:rgba(255,255,255,.65);margin-bottom:12px;transition:color .25s;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{max-width:1280px;margin:60px auto 0;padding-top:26px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.78rem;color:rgba(255,255,255,.45);}
+
+/* ============ FLOATING UI ============ */
+#whatsappFloat{
+  position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:var(--shadow-lg);z-index:900;
+  animation:pulse 2.4s infinite;
+}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5), var(--shadow-lg);}70%{box-shadow:0 0 0 14px rgba(37,211,102,0), var(--shadow-lg);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0), var(--shadow-lg);}}
+#backToTop{
+  position:fixed;bottom:26px;left:26px;width:48px;height:48px;border-radius:50%;background:var(--charcoal);color:#fff;
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);z-index:900;opacity:0;pointer-events:none;
+  transition:all .35s;
+}
+#backToTop.show{opacity:1;pointer-events:auto;}
+
+/* toast */
+#toast{
+  position:fixed;top:90px;left:50%;transform:translateX(-50%) translateY(-20px);background:var(--charcoal);color:#fff;
+  padding:14px 26px;border-radius:100px;font-size:.85rem;z-index:9998;opacity:0;pointer-events:none;transition:all .35s var(--ease);
+  display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-md);
+}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+#toast i{color:var(--gold-light);}
+
+/* cart/wishlist drawer */
+.drawer-overlay{position:fixed;inset:0;background:rgba(43,43,43,.5);z-index:1990;opacity:0;pointer-events:none;transition:opacity .35s;backdrop-filter:blur(2px);}
+.drawer-overlay.show{opacity:1;pointer-events:auto;}
+.drawer{position:fixed;top:0;right:-420px;width:400px;max-width:88vw;height:100%;background:var(--ivory);z-index:2000;transition:right .4s var(--ease);box-shadow:-10px 0 40px rgba(0,0,0,.15);display:flex;flex-direction:column;}
+.drawer.show{right:0;}
+.drawer-head{padding:26px 26px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);}
+.drawer-head h3{font-size:1.3rem;}
+.drawer-body{flex:1;overflow-y:auto;padding:20px 26px;}
+.drawer-empty{text-align:center;padding:60px 10px;color:var(--charcoal-soft);}
+.drawer-empty i{font-size:2.4rem;color:var(--beige);margin-bottom:14px;}
+.drawer-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center;}
+.drawer-row .thumb{width:64px;height:64px;border-radius:10px;flex-shrink:0;position:relative;overflow:hidden;}
+.drawer-row .thumb .placeholder{border-radius:10px;border:none;}
+.drawer-row .info{flex:1;}
+.drawer-row .info strong{font-size:.88rem;display:block;}
+.drawer-row .info span{font-size:.8rem;color:var(--gold-dark);}
+.drawer-row .rm{color:#b3413f;font-size:.9rem;}
+.drawer-foot{padding:22px 26px;border-top:1px solid var(--line);}
+.drawer-foot .total-row{display:flex;justify-content:space-between;margin-bottom:16px;font-family:'Playfair Display',serif;font-size:1.15rem;}
+.drawer-foot .btn{width:100%;justify-content:center;}
+
+/* search overlay */
+.search-overlay{position:fixed;inset:0;background:rgba(43,43,43,.6);z-index:2100;opacity:0;pointer-events:none;transition:opacity .3s;display:flex;align-items:flex-start;justify-content:center;padding-top:12vh;}
+.search-overlay.show{opacity:1;pointer-events:auto;}
+.search-box{width:600px;max-width:90vw;background:#fff;border-radius:18px;padding:28px;box-shadow:var(--shadow-lg);}
+.search-box input{width:100%;padding:16px 20px;border-radius:12px;border:1px solid var(--line);font-size:1rem;font-family:inherit;}
+.search-hint{margin-top:16px;font-size:.8rem;color:var(--charcoal-soft);}
+.search-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.search-tags span{background:var(--beige);padding:6px 14px;border-radius:100px;font-size:.78rem;color:var(--charcoal-soft);}
+
+/* mobile bottom nav */
+.mobile-bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);z-index:950;padding:8px 0 max(8px,env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(0,0,0,.06);}
+.mobile-bottom-nav .mbn-row{display:flex;justify-content:space-around;}
+.mobile-bottom-nav a{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.62rem;color:var(--charcoal-soft);position:relative;}
+.mobile-bottom-nav a i{font-size:1.1rem;}
+.mobile-bottom-nav a .badge{position:absolute;top:-4px;right:8px;background:var(--gold-dark);color:#fff;width:14px;height:14px;border-radius:50%;font-size:.55rem;display:flex;align-items:center;justify-content:center;}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1100px){
+  .why-grid,.product-grid{grid-template-columns:repeat(2,1fr);}
+  .occasion-scroll{grid-template-columns:repeat(2,1fr);}
+  .earn-panels{grid-template-columns:1fr;}
+  .gallery-grid{columns:2 220px;}
+  .insta-grid{grid-template-columns:repeat(3,1fr);}
+}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero{padding-top:110px;}
+  .hero-visual{order:-1;aspect-ratio:16/10;}
+  .corp-wrap,.contact-wrap{grid-template-columns:1fr;}
+  .two-col{grid-template-columns:1fr;}
+  .quiz-options{grid-template-columns:1fr;}
+  .testi-track{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:720px){
+  .nav-links{display:none;}
+  .hamburger{display:block;}
+  .section{padding:70px 6vw;}
+  .why-grid,.product-grid{grid-template-columns:1fr 1fr;gap:14px;}
+  .why-card{padding:22px 16px;}
+  .earn-steps{grid-template-columns:1fr;}
+  body{padding-bottom:64px;}
+  .mobile-bottom-nav{display:block;}
+  #whatsappFloat{bottom:82px;}
+  #backToTop{bottom:82px;}
+  .footer-grid{grid-template-columns:1fr;}
+  .product-actions{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<div id="scrollProgress"></div>
+
+<!-- ================= NAV ================= -->
+<header id="mainNav">
+  <a href="#home" class="nav-logo"><span class="mark">V</span> Vellora</a>
+  <nav class="nav-links">
+    <a href="#occasions">Occasions</a>
+    <a href="#collection">Collections</a>
+    <a href="#custom">Customize</a>
+    <a href="#corporate">Corporate</a>
+    <a href="#earn">Affiliate</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" onclick="openSearch()" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button class="icon-btn" onclick="openDrawer('wishlist')" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="badge" id="wishBadge">0</span></button>
+    <button class="icon-btn" onclick="openDrawer('cart')" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="badge" id="cartBadge">0</span></button>
+    <a href="https://wa.me/918459969717" target="_blank" class="btn btn-gold" style="display:none" id="navWaBtn"><i class="fa-brands fa-whatsapp"></i> Order</a>
+    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- mobile slide menu -->
+<div id="mobileMenu" style="display:none;position:fixed;inset:0;background:var(--ivory);z-index:1500;padding:100px 8vw;">
+  <button onclick="toggleMobileMenu()" style="position:absolute;top:26px;right:8vw;font-size:1.4rem;"><i class="fa-solid fa-xmark"></i></button>
+  <nav style="display:flex;flex-direction:column;gap:26px;font-family:'Playfair Display',serif;font-size:1.6rem;">
+    <a href="#occasions" onclick="toggleMobileMenu()">Occasions</a>
+    <a href="#collection" onclick="toggleMobileMenu()">Collections</a>
+    <a href="#custom" onclick="toggleMobileMenu()">Customize</a>
+    <a href="#corporate" onclick="toggleMobileMenu()">Corporate</a>
+    <a href="#earn" onclick="toggleMobileMenu()">Affiliate</a>
+    <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+    <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+  </nav>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-logo reveal">V</div>
+      <span class="eyebrow reveal">Gifts That Feel Like Home</span>
+      <h1 class="reveal">Every Gift <em>Tells</em> a Story.</h1>
+      <p class="sub reveal">Premium customized hampers crafted with love for every celebration — thoughtfully curated, never generic.</p>
+      <div class="hero-ctas reveal">
+        <a href="https://wa.me/918459969717" target="_blank" class="btn btn-gold"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+        <a href="#occasions" class="btn btn-outline">Explore Collections</a>
+      </div>
+      <div class="hero-trust reveal">
+        <div><strong>5,000+</strong><span>Hampers Delivered</span></div>
+        <div><strong>4.9 ★</strong><span>Customer Rating</span></div>
+        <div><strong>Same-Day</strong><span>Delivery in Pune/PCMC</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal" id="heroVisual">
+      <div class="placeholder">
+        <i class="fa-solid fa-image"></i>
+        <span class="ph-label">Hero banner</span>
+        <span class="ph-name">hero-banner.jpg</span>
+      </div>
+      <div class="float-card">
+        <i class="fa-solid fa-gift"></i>
+        <div><strong>Handcrafted Today</strong><span>Ready for delivery</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE ================= -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Vellora Difference</span>
+      <h2>Why Families & Brands Choose Vellora</h2>
+      <p>Every hamper is built around your story — not pulled off a shelf.</p>
+    </div>
+    <div class="why-grid reveal-stagger">
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h4>Fully Customized Hampers</h4><p>Curated piece by piece around the recipient, occasion and budget.</p></div>
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-envelope-open-text"></i></div><h4>Handmade Greeting Cards</h4><p>Hand-lettered notes that carry your words, not a template's.</p></div>
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-image-portrait"></i></div><h4>Personalized Names & Photos</h4><p>Names, photos and monograms woven into the packaging itself.</p></div>
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-gifts"></i></div><h4>Premium Packaging</h4><p>Layered ribbon, wax seals and boxes designed to be unwrapped slowly.</p></div>
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-bolt"></i></div><h4>Same-Day Delivery</h4><p>Order by 2 PM for same-day delivery across Pune & PCMC.</p></div>
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-truck-fast"></i></div><h4>Nationwide Courier</h4><p>Reliable tracked delivery to every corner of India.</p></div>
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-building"></i></div><h4>Corporate Bulk Orders</h4><p>Consistent quality at scale for teams, clients and events.</p></div>
+      <div class="why-card"><div class="ic"><i class="fa-solid fa-award"></i></div><h4>High-Quality Products</h4><p>Sourced from artisans and premium brands we trust ourselves.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon-divider reveal"><div class="line"></div><div class="seal">V</div><div class="line"></div></div>
+
+<!-- ================= SHOP BY OCCASION ================= -->
+<section class="section" id="occasions">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Curated For Every Moment</span>
+      <h2>Shop by Occasion</h2>
+      <p>Every milestone deserves a hamper built just for it.</p>
+    </div>
+    <div class="occasion-scroll reveal-stagger" id="occasionGrid"></div>
+  </div>
+</section>
+
+<!-- ================= SHOP BY BUDGET ================= -->
+<section class="section" id="budget" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Every Budget, Full Craftsmanship</span>
+      <h2>Shop by Budget</h2>
+    </div>
+    <div class="budget-tabs reveal" id="budgetTabs">
+      <button class="budget-tab active" data-b="all">All</button>
+      <button class="budget-tab" data-b="500">Under ₹500</button>
+      <button class="budget-tab" data-b="1000">₹500–₹1000</button>
+      <button class="budget-tab" data-b="2000">₹1000–₹2000</button>
+      <button class="budget-tab" data-b="5000">₹2000–₹5000</button>
+      <button class="budget-tab" data-b="lux">Premium Luxury</button>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon-divider reveal"><div class="line"></div><div class="seal">V</div><div class="line"></div></div>
+
+<!-- ================= AI GIFT FINDER ================= -->
+<section class="section" id="giftfinder">
+  <div class="container">
+    <div class="quiz-wrap reveal">
+      <div class="quiz-inner">
+        <span class="eyebrow" style="color:var(--gold-light)">AI Gift Finder</span>
+        <h2 style="color:#fff;margin-bottom:6px;">Not sure what to send?</h2>
+        <p style="color:rgba(255,255,255,.65);margin-bottom:34px;">Answer six quick questions — we'll recommend the perfect hamper.</p>
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizFill"></div></div>
+
+        <div class="quiz-step active" data-step="1">
+          <span class="q-num">Question 1 of 6</span>
+          <h3>What's the occasion?</h3>
+          <div class="quiz-options" data-q="occasion">
+
+            <!-- Birthday -->
+            <button class="quiz-option has-img" type="button">
+              <span class="thumb-wrap">
+                <img class="media-fill" src="occasion-birthday.jpg" alt="Birthday gift" loading="lazy" onerror="handleMediaError(this,'Birthday','occasion-birthday.jpg')">
+              </span>
+              <span class="option-label"><i class="fa-solid fa-cake-candles"></i> Birthday</span>
+            </button>
+
+            <!-- Anniversary -->
+            <button class="quiz-option has-img" type="button">
+              <span class="thumb-wrap">
+                <img class="media-fill" src="occasion-anniversary.jpg" alt="Anniversary gift" loading="lazy" onerror="handleMediaError(this,'Anniversary','occasion-anniversary.jpg')">
+              </span>
+              <span class="option-label"><i class="fa-solid fa-heart"></i> Anniversary</span>
+            </button>
+
+            <!-- Wedding -->
+            <button class="quiz-option has-img" type="button">
+              <span class="thumb-wrap">
+                <img class="media-fill" src="occasion-wedding.jpg" alt="Wedding gift" loading="lazy" onerror="handleMediaError(this,'Wedding','occasion-wedding.jpg')">
+              </span>
+              <span class="option-label"><i class="fa-solid fa-rings-wedding"></i> Wedding</span>
+            </button>
+
+            <!-- Baby Shower -->
+            <button class="quiz-option has-img" type="button">
+              <span class="thumb-wrap">
+                <img class="media-fill" src="occasion-baby-shower.jpg" alt="Baby shower gift" loading="lazy" onerror="handleMediaError(this,'Baby Shower','occasion-baby-shower.jpg')">
+              </span>
+              <span class="option-label"><i class="fa-solid fa-baby"></i> Baby Shower</span>
+            </button>
+
+            <!-- Corporate -->
+            <button class="quiz-option has-img" type="button">
+              <span class="thumb-wrap">
+                <img class="media-fill" src="occasion-corporate.jpg" alt="Corporate gift" loading="lazy" onerror="handleMediaError(this,'Corporate','occasion-corporate.jpg')">
+              </span>
+              <span class="option-label"><i class="fa-solid fa-briefcase"></i> Corporate</span>
+            </button>
+
+            <!-- Proposal -->
+            <button class="quiz-option has-img" type="button">
+              <span class="thumb-wrap">
+                <img class="media-fill" src="occasion-proposal.jpg" alt="Proposal gift" loading="lazy" onerror="handleMediaError(this,'Proposal','occasion-proposal.jpg')">
+              </span>
+              <span class="option-label"><i class="fa-solid fa-ring"></i> Proposal</span>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="2">
+          <span class="q-num">Question 2 of 6</span>
+          <h3>Who is it for?</h3>
+          <div class="quiz-options" data-q="recipient">
+            <button class="quiz-option"><i class="fa-solid fa-user"></i> Partner</button>
+            <button class="quiz-option"><i class="fa-solid fa-people-roof"></i> Family</button>
+            <button class="quiz-option"><i class="fa-solid fa-user-tie"></i> Colleague</button>
+            <button class="quiz-option"><i class="fa-solid fa-user-group"></i> Friend</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="3">
+          <span class="q-num">Question 3 of 6</span>
+          <h3>What's your budget?</h3>
+          <div class="quiz-options" data-q="budget">
+            <button class="quiz-option">Under ₹500</button>
+            <button class="quiz-option">₹500 – ₹1000</button>
+            <button class="quiz-option">₹1000 – ₹2000</button>
+            <button class="quiz-option">₹2000+ Luxury</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="4">
+          <span class="q-num">Question 4 of 6</span>
+          <h3>When do you need it delivered?</h3>
+          <div class="quiz-options" data-q="delivery">
+            <button class="quiz-option"><i class="fa-solid fa-bolt"></i> Today</button>
+            <button class="quiz-option"><i class="fa-solid fa-calendar-day"></i> Tomorrow</button>
+            <button class="quiz-option"><i class="fa-solid fa-calendar-week"></i> This Week</button>
+            <button class="quiz-option"><i class="fa-solid fa-calendar"></i> Choose a Date</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="5">
+          <span class="q-num">Question 5 of 6</span>
+          <h3>Preferred theme?</h3>
+          <div class="quiz-options" data-q="theme">
+            <button class="quiz-option"><i class="fa-solid fa-crown"></i> Elegant & Gold</button>
+            <button class="quiz-option"><i class="fa-solid fa-leaf"></i> Rustic & Natural</button>
+            <button class="quiz-option"><i class="fa-solid fa-heart"></i> Romantic Pastels</button>
+            <button class="quiz-option"><i class="fa-solid fa-star"></i> Bold & Festive</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="6">
+          <span class="q-num">Question 6 of 6</span>
+          <h3>Want personalization?</h3>
+          <div class="quiz-options" data-q="personalize">
+            <button class="quiz-option"><i class="fa-solid fa-signature"></i> Yes, name & photo</button>
+            <button class="quiz-option"><i class="fa-solid fa-note-sticky"></i> Just a handwritten note</button>
+            <button class="quiz-option"><i class="fa-solid fa-box"></i> Keep it simple</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="result">
+          <div class="quiz-result">
+            <i class="fa-solid fa-sparkles big"></i>
+            <h3>Your Perfect Match</h3>
+            <p id="quizResultText">Based on your answers, our stylists recommend a fully customized hamper tailored to your occasion, theme and budget.</p>
+            <a href="https://wa.me/918459969717" target="_blank" class="btn btn-gold"><i class="fa-brands fa-whatsapp"></i> Get This Hamper on WhatsApp</a>
+            <div style="margin-top:16px;"><button class="btn btn-outline-light" onclick="restartQuiz()">Start Over</button></div>
+          </div>
+        </div>
+
+        <div class="quiz-nav" id="quizNav">
+          <button class="btn btn-outline-light" id="quizBack" onclick="quizMove(-1)" style="visibility:hidden;">Back</button>
+          <button class="btn btn-gold" id="quizNext" onclick="quizMove(1)" disabled>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED COLLECTION ================= -->
+<section class="section" id="collection">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Best Loved</span>
+      <h2>Featured Collection</h2>
+      <p>A glimpse of what we craft — every piece can be fully personalized.</p>
+    </div>
+    <div class="product-grid reveal-stagger" id="productGrid"></div>
+  </div>
+</section>
+
+<div class="ribbon-divider reveal"><div class="line"></div><div class="seal">V</div><div class="line"></div></div>
+
+<!-- ================= CUSTOM HAMPERS ================= -->
+<section class="section" id="custom">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Made Around You</span>
+      <h2>How Your Custom Hamper Comes Together</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-num">1</div><div class="tl-content"><h4>Tell us your occasion</h4><p>Share the moment you're celebrating — big or small.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-num">2</div><div class="tl-content"><h4>Choose your budget</h4><p>We'll design beautifully within it, no compromise on care.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-num">3</div><div class="tl-content"><h4>Share customization details</h4><p>Names, photos, favourite colours, a personal message — tell us everything.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-num">4</div><div class="tl-content"><h4>Approve the design</h4><p>We send a preview before anything is packed.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-num">5</div><div class="tl-content"><h4>We craft your hamper</h4><p>Assembled and wrapped by hand, start to finish.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-num">6</div><div class="tl-content"><h4>Delivered with love</h4><p>On time, exactly as promised — same-day where available.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CORPORATE ================= -->
+<section class="section" id="corporate" style="background:var(--white);">
+  <div class="container corp-wrap">
+    <div class="reveal">
+      <span class="eyebrow">For Teams & Clients</span>
+      <h2>Corporate Gifting, Done Right</h2>
+      <p style="margin-top:14px;color:var(--charcoal-soft);line-height:1.7;">From onboarding kits to client appreciation, we handle bulk orders with the same care as a single hamper.</p>
+      <ul class="corp-list">
+        <li><i class="fa-solid fa-check"></i> Employee Welcome Kits</li>
+        <li><i class="fa-solid fa-check"></i> Client Appreciation Gifts</li>
+        <li><i class="fa-solid fa-check"></i> Festive Gifts</li>
+        <li><i class="fa-solid fa-check"></i> Event Hampers</li>
+        <li><i class="fa-solid fa-check"></i> Bulk Orders with Volume Pricing</li>
+      </ul>
+    </div>
+    <div class="form-card reveal">
+      <h3>Corporate Inquiry</h3>
+      <form onsubmit="return handleFormSubmit(event,'Corporate inquiry')">
+        <div class="two-col">
+          <div class="form-row"><label>Company Name</label><input type="text" required></div>
+          <div class="form-row"><label>Contact Person</label><input type="text" required></div>
+        </div>
+        <div class="two-col">
+          <div class="form-row"><label>Email</label><input type="email" required></div>
+          <div class="form-row"><label>Phone</label><input type="tel" required></div>
+        </div>
+        <div class="form-row"><label>Number of Hampers</label><input type="number" min="1" placeholder="e.g. 50"></div>
+        <div class="form-row"><label>Requirement Details</label><textarea placeholder="Tell us about the occasion, budget, timeline..."></textarea></div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;">Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EARN WITH VELLORA ================= -->
+<section class="section" id="earn">
+  <div class="container">
+    <div class="earn-wrap reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">Vellora Partner Program</span>
+        <h2>Earn With Vellora</h2>
+        <p>Love Vellora? Refer customers and earn on every order that comes through you.</p>
+      </div>
+      <div class="earn-steps">
+        <div class="earn-step"><div class="n">01</div><h4>Register</h4><p>Sign up as a Vellora partner in under two minutes.</p></div>
+        <div class="earn-step"><div class="n">02</div><h4>Share Your Link</h4><p>Send your unique referral link to friends, followers or clients.</p></div>
+        <div class="earn-step"><div class="n">03</div><h4>Earn Commission</h4><p>Get paid automatically for every completed order.</p></div>
+      </div>
+      <div class="earn-panels">
+        <div class="earn-panel">
+          <h4><i class="fa-solid fa-user-plus"></i> Quick Registration</h4>
+          <form onsubmit="return handleFormSubmit(event,'Partner registration')">
+            <div class="form-row"><label>Full Name</label><input type="text" required></div>
+            <div class="form-row"><label>Email or Phone</label><input type="text" required></div>
+            <div class="form-row"><label>How will you promote Vellora?</label>
+              <select><option>Instagram / Social Media</option><option>Personal Network</option><option>Blog / Website</option><option>Other</option></select>
+            </div>
+            <button class="btn btn-primary" style="width:100%;justify-content:center;">Join the Program</button>
+          </form>
+        </div>
+        <div class="earn-panel">
+          <h4><i class="fa-solid fa-chart-simple"></i> Partner Dashboard</h4>
+          <div class="commission-box"><span>Commission Rate</span><strong>10–15%*</strong></div>
+          <div class="commission-box"><span>Referrals This Month</span><strong>—</strong></div>
+          <div class="commission-box"><span>Pending Payout</span><strong>₹0</strong></div>
+          <p style="font-size:.72rem;color:var(--charcoal-soft);margin-top:10px;">*Final commission structure confirmed on approval. Payouts processed monthly via bank transfer or UPI.</p>
+          <h4 style="margin-top:22px;"><i class="fa-solid fa-link"></i> Your Referral Link</h4>
+          <div class="referral-gen">
+            <input type="text" readonly value="vellora.com/ref/yourname" id="refLink">
+            <button class="btn btn-outline" onclick="copyRef()">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon-divider reveal"><div class="line"></div><div class="seal">V</div><div class="line"></div></div>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Moments We've Wrapped</span>
+      <h2>Gallery</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section" id="testimonials" style="background:var(--white);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Loved by 5,000+ Customers</span>
+      <h2>Testimonials</h2>
+    </div>
+    <div class="testi-track reveal-stagger" id="testiTrack"></div>
+    <div class="google-badge reveal"><i class="fa-brands fa-google" style="color:#4285F4;"></i> Google Reviews integration placeholder — live reviews sync coming soon</div>
+  </div>
+</section>
+
+<!-- ================= INSTAGRAM ================= -->
+<section class="section" id="instagram">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">@vellora.curated</span>
+      <h2>From Our Instagram</h2>
+    </div>
+    <div class="insta-grid" id="instaGrid"></div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" style="background:var(--white);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Good to Know</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list reveal" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="container contact-wrap">
+    <div class="reveal">
+      <span class="eyebrow">We'd Love to Hear From You</span>
+      <h2>Get in Touch</h2>
+      <div class="contact-cards" style="margin-top:26px;">
+        <a href="https://wa.me/918459969717" target="_blank" class="contact-card"><div class="ic"><i class="fa-brands fa-whatsapp"></i></div><div><strong>WhatsApp</strong><span>+91 84599 69717 — fastest response</span></div></a>
+        <a href="tel:+918459969717" class="contact-card"><div class="ic"><i class="fa-solid fa-phone"></i></div><div><strong>Call Us</strong><span>+91 84599 69717</span></div></a>
+        <a href="mailto:harshadabussiness@gmail.com" class="contact-card"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><strong>Email</strong><span>hello@vellora.com</span></div></a>
+        <a href="https://www.instagram.com/vellora.curated?igsh=Y2F1Zmx3bzFhbWlq" target="_blank" class="contact-card"><div class="ic"><i class="fa-brands fa-instagram"></i></div><div><strong>Instagram</strong><span>@vellora.gifts</span></div></a>
+      </div>
+      <div class="placeholder map-placeholder"><i class="fa-solid fa-map-location-dot"></i><span class="ph-label">Google Maps — Pune / PCMC</span></div>
+    </div>
+    <div class="form-card reveal">
+      <h3>Send a Message</h3>
+      <form onsubmit="return handleFormSubmit(event,'Message')">
+        <div class="two-col">
+          <div class="form-row"><label>Name</label><input type="text" required></div>
+          <div class="form-row"><label>Phone</label><input type="tel" required></div>
+        </div>
+        <div class="form-row"><label>Email</label><input type="email" required></div>
+        <div class="form-row"><label>Delivery Date (if any)</label><input type="date"></div>
+        <div class="form-row"><label>Message</label><textarea placeholder="Tell us what you're looking for..." required></textarea></div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo"><span class="mark">V</span> Vellora</a>
+      <p>Gifts that feel like home. Premium, fully customized hampers crafted with love, delivered across India.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/918459969717" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Explore</h5>
+      <a href="#why">About</a><a href="#collection">Collections</a><a href="#corporate">Corporate</a><a href="#earn">Affiliate Program</a>
+    </div>
+    <div class="footer-col"><h5>Occasions</h5>
+      <a href="#occasions">Birthday</a><a href="#occasions">Anniversary</a><a href="#occasions">Wedding</a><a href="#occasions">Corporate</a>
+    </div>
+    <div class="footer-col"><h5>Support</h5>
+      <a href="#contact">Contact Us</a><a href="#faq">FAQ</a><a href="#">Track Order</a><a href="#">Shipping Info</a>
+    </div>
+    <div class="footer-col"><h5>Legal</h5>
+      <a href="#">Terms of Service</a><a href="#">Privacy Policy</a><a href="#">Refund Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Vellora. All rights reserved.</span>
+    <span>Made with care in Pune, India</span>
+  </div>
+</footer>
+
+<!-- ================= FLOATING UI ================= -->
+<a href="https://wa.me/918459969717" target="_blank" id="whatsappFloat" aria-label="Order on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="toast"><i class="fa-solid fa-circle-check"></i><span id="toastMsg"></span></div>
+
+<!-- drawers -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawers()"></div>
+<div class="drawer" id="cartDrawer">
+  <div class="drawer-head"><h3>Your Bag</h3><button onclick="closeDrawers()"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot"><div class="total-row"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <a href="https://wa.me/918459969717" target="_blank" class="btn btn-gold"><i class="fa-brands fa-whatsapp"></i> Checkout on WhatsApp</a>
+  </div>
+</div>
+<div class="drawer" id="wishlistDrawer">
+  <div class="drawer-head"><h3>Wishlist</h3><button onclick="closeDrawers()"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="drawer-body" id="wishlistBody"></div>
+</div>
+
+<!-- search overlay -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
+  <div class="search-box">
+    <input type="text" placeholder="Search hampers, occasions, themes..." id="searchInput" autofocus>
+    <p class="search-hint">Popular searches</p>
+    <div class="search-tags">
+      <span>Birthday Hamper</span><span>Anniversary</span><span>Corporate Gifting</span><span>Under ₹1000</span><span>Luxury Bouquet</span>
+    </div>
+  </div>
+</div>
+
+<!-- mobile bottom nav -->
+<nav class="mobile-bottom-nav">
+  <div class="mbn-row">
+    <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="#occasions"><i class="fa-solid fa-gift"></i>Shop</a>
+    <a href="#" onclick="openSearch();return false;"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+    <a href="#" onclick="openDrawer('wishlist');return false;"><i class="fa-regular fa-heart"></i>Wishlist<span class="badge" id="mWishBadge">0</span></a>
+    <a href="#" onclick="openDrawer('cart');return false;"><i class="fa-solid fa-bag-shopping"></i>Bag<span class="badge" id="mCartBadge">0</span></a>
+  </div>
+</nav>
+
+<script>
+/* ============ DATA ============ */
+const occasions = [
+  {name:'Birthday', file:'occasion-birthday.jpg', tag:'Celebrate another year'},
+  {name:'Anniversary', file:'occasion-anniversary.jpg', tag:'Cherish the years together'},
+  {name:'Wedding', file:'occasion-wedding.jpg', tag:'Begin forever in style'},
+  {name:'Baby Shower', file:'occasion-baby-shower.jpg', tag:'Welcome the little one'},
+  {name:'Festival', file:'occasion-festival.jpg', tag:"Share the season's joy"},
+  {name:'Proposal', file:'occasion-proposal.jpg', tag:'Make the moment unforgettable'},
+  {name:'Corporate', file:'occasion-corporate.jpg', tag:'Impress with intention'},
+  {name:'Luxury Bouquets', file:'occasion-bouquet.jpg', tag:'Blooms, elevated'},
+];
+
+const products = [
+  {id:1,name:'Golden Hour Birthday Box',price:1299,old:1599,rating:4.9,img:'product-01.jpg',desc:'Curated sweets, candle & handwritten card.',budget:2000,badge:'Bestseller'},
+  {id:2,name:'Blush & Bloom Anniversary Set',price:2499,old:null,rating:5.0,img:'product-02.jpg',desc:'Roses, chocolates & a personalized photo frame.',budget:5000,badge:'Popular'},
+  {id:3,name:'Forever Wedding Trousseau',price:4999,old:5999,rating:4.8,img:'product-03.jpg',desc:'Premium dry fruits, silk pouch & keepsake card.',budget:5000,badge:null},
+  {id:4,name:'Little Miracles Baby Hamper',price:1899,old:null,rating:4.9,img:'product-04.jpg',desc:'Soft toys, onesies & a welcome card.',budget:2000,badge:null},
+  {id:5,name:'Festive Radiance Box',price:899,old:1099,rating:4.7,img:'product-05.jpg',desc:'Dry fruits, diyas & festive sweets.',budget:1000,badge:'Sale'},
+  {id:6,name:'The Grand Proposal Set',price:3499,old:null,rating:5.0,img:'product-06.jpg',desc:'Roses, candles & a ring display box.',budget:5000,badge:null},
+  {id:7,name:'Executive Welcome Kit',price:1599,old:null,rating:4.8,img:'product-07.jpg',desc:'Notebook, mug, snacks — branded on request.',budget:2000,badge:null},
+  {id:8,name:'Signature Luxury Bouquet',price:2199,old:2599,rating:4.9,img:'product-08.jpg',desc:'Hand-tied premium blooms, gift-wrapped.',budget:5000,badge:'Bestseller'},
+  {id:9,name:'Sweet Nothings Mini Box',price:449,old:null,rating:4.6,img:'product-09.jpg',desc:'A pocket-friendly treat box with a note.',budget:500,badge:null},
+  {id:10,name:'Champagne Dreams Hamper',price:7999,old:null,rating:5.0,img:'product-10.jpg',desc:'Our most opulent hamper — fully bespoke.',budget:'lux',badge:'Luxury'},
+  {id:11,name:'Corporate Bulk Delight',price:999,old:null,rating:4.7,img:'product-11.jpg',desc:'Consistent quality, priced for volume orders.',budget:1000,badge:null},
+  {id:12,name:'Rustic Bloom Basket',price:1799,old:1999,rating:4.8,img:'product-12.jpg',desc:'Wildflowers in a handwoven basket.',budget:2000,badge:null},
+];
+
+const galleryFiles = ['gallery-01.jpg','gallery-02.jpg','gallery-03.jpg','gallery-video-01.mp4','gallery-video-02.mp4','gallery-video-03.mp4','gallery-video-04.mp4','gallery-video-05.mp4','gallery-04.jpg','gallery-05.jpg'];
+
+const testimonials = [
+  {name:'Ananya R.',city:'Pune',text:'The hamper arrived exactly on time and looked even more beautiful than the photos. The handwritten card made my mother cry — happy tears.'},
+  {name:'Rohit K.',city:'Mumbai',text:'We ordered 40 corporate hampers for our team and every single one was consistent, premium and on schedule. Will use Vellora every year now.'},
+  {name:'Priya & Dev',city:'PCMC',text:'Our wedding welcome hampers were the talk of the whole event. Genuinely felt like a luxury brand, not a local vendor.'},
+];
+
+const faqs = [
+  {q:'Can I fully customize my hamper?',a:'Yes — every hamper can be tailored with your choice of items, colours, names, photos and a personal message. Nothing is pre-fixed unless you want it to be.'},
+  {q:'Do you offer same-day delivery?',a:'Same-day delivery is available across Pune and PCMC for orders placed before 2 PM. For other cities, we offer next-day and scheduled delivery.'},
+  {q:'Do you deliver across India?',a:'Yes, we deliver nationwide through trusted courier partners with full tracking, in addition to our own same-day fleet in Pune and PCMC.'},
+  {q:'Can I add my own message?',a:'Absolutely. Every hamper includes the option of a handmade greeting card with your own words, hand-lettered by our team.'},
+  {q:'How do corporate orders work?',a:'Share your requirement through our corporate inquiry form — quantity, budget and timeline — and our team will get back with a proposal within 24 hours.'},
+];
+
+/* ============ MEDIA HELPERS ============ */
+// Drop real files into the SAME folder as this HTML file using these exact
+// filenames and they will replace the placeholders automatically — no code changes needed.
+
+function ph(icon,label,file){
+  return `<div class="placeholder"><i class="fa-solid ${icon}"></i><span class="ph-label">${label}</span><span class="ph-name">${file}</span></div>`;
+}
+
+// Fills its (positioned) parent edge-to-edge — use for product photos, occasion tiles, hero, instagram
+function media(path,label,alt){
+  const isVideo = /\.(mp4|webm|mov)$/i.test(path);
+  alt = (alt||label||'').replace(/"/g,'&quot;');
+  if(isVideo){
+    return `<video class="media-fill" src="${path}" muted loop playsinline preload="metadata" onmouseover="this.play().catch(()=>{})" onmouseout="this.pause()" onerror="handleMediaError(this,'${label}','${path}')"></video>`;
+  }
+  return `<img class="media-fill" src="${path}" alt="${alt}" loading="lazy" onerror="handleMediaError(this,'${label}','${path}')">`;
+}
+
+// Sits at its natural size — use for the masonry gallery
+function mediaAuto(path,label,alt){
+  const isVideo = /\.(mp4|webm|mov)$/i.test(path);
+  alt = (alt||label||'').replace(/"/g,'&quot;');
+  if(isVideo){
+    return `<video class="media-auto" src="${path}" muted loop playsinline preload="metadata" onmouseover="this.play().catch(()=>{})" onmouseout="this.pause()" onerror="handleMediaError(this,'${label}','${path}')"></video>`;
+  }
+  return `<img class="media-auto" src="${path}" alt="${alt}" loading="lazy" onerror="handleMediaError(this,'${label}','${path}')">`;
+}
+
+// Called automatically if a file is missing/broken — swaps back to the dashed placeholder box
+function handleMediaError(el,label,path){
+  const div = document.createElement('div');
+  div.className = 'placeholder';
+  div.innerHTML = `<i class="fa-solid fa-image"></i><span class="ph-label">${label}</span><span class="ph-name">${path}</span>`;
+  el.replaceWith(div);
+}
+
+/* ============ RENDER ============ */
+const occasionGrid = document.getElementById('occasionGrid');
+occasions.forEach(o=>{
+  occasionGrid.innerHTML += `<div class="occasion-card">${media(o.file,o.name,o.name+' hamper')}<div class="occasion-overlay"><span>Shop Now</span><h4>${o.name} Hampers</h4></div></div>`;
+});
+
+let cart = [];
+let wishlist = [];
+
+function renderProducts(filter='all'){
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML='';
+  const list = filter==='all' ? products : products.filter(p=>String(p.budget)===String(filter));
+  if(list.length===0){grid.innerHTML='<p style="grid-column:1/-1;text-align:center;color:var(--charcoal-soft);padding:40px;">No hampers in this range yet — try another budget.</p>';return;}
+  list.forEach(p=>{
+    const isWish = wishlist.includes(p.id);
+    grid.innerHTML += `
+    <div class="product-card">
+      <div class="product-media">
+        ${media(p.img,p.name,p.name)}
+        ${p.badge?`<span class="product-badge">${p.badge}</span>`:''}
+        <button class="wish-btn ${isWish?'active':''}" onclick="toggleWishlist(${p.id})"><i class="fa-solid fa-heart"></i></button>
+      </div>
+      <div class="product-body">
+        <span class="rating"><i class="fa-solid fa-star"></i> ${p.rating} rating</span>
+        <h4>${p.name}</h4>
+        <p class="desc">${p.desc}</p>
+        <div class="price-row"><span class="price">₹${p.price.toLocaleString('en-IN')}</span>${p.old?`<span class="old-price">₹${p.old.toLocaleString('en-IN')}</span>`:''}</div>
+        <div class="product-actions">
+          <button class="btn btn-outline" onclick="addToCart(${p.id})">Add to Cart</button>
+          <a href="https://wa.me/918459969717?text=Hi! I'd like to order the ${encodeURIComponent(p.name)}" target="_blank" class="btn btn-gold">Buy Now</a>
+        </div>
+      </div>
+    </div>`;
+  });
+}
+renderProducts();
+
+document.querySelectorAll('.budget-tab').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    document.querySelectorAll('.budget-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    renderProducts(tab.dataset.b);
+  });
+});
+
+const galleryGrid = document.getElementById('galleryGrid');
+galleryFiles.forEach(f=>{
+  const isVideo = f.endsWith('.mp4');
+  const path = f;
+  galleryGrid.innerHTML += `<div class="gallery-item">${mediaAuto(path,isVideo?'Video':'Photo',isVideo?'Vellora behind-the-scenes video':'Vellora hamper photo')}${isVideo?'<div class="play-ic"><i class="fa-solid fa-play"></i></div>':''}</div>`;
+});
+
+const instaGrid = document.getElementById('instaGrid');
+for(let i=0;i<12;i++){instaGrid.innerHTML += `<div class="insta-item">${media('insta-'+(i+1)+'.jpg','Instagram post','Vellora Instagram post '+(i+1))}</div>`;}
+
+const testiTrack = document.getElementById('testiTrack');
+testimonials.forEach(t=>{
+  testiTrack.innerHTML += `<div class="testi-card"><div class="testi-top"><div class="testi-avatar">${t.name[0]}</div><div><strong>${t.name}</strong><span style="font-size:.78rem;color:var(--charcoal-soft);">${t.city}</span><div class="stars">★★★★★</div></div></div><p>"${t.text}"</p></div>`;
+});
+
+const faqList = document.getElementById('faqList');
+faqs.forEach((f,i)=>{
+  faqList.innerHTML += `<div class="faq-item"><div class="faq-q" onclick="toggleFaq(${i})">${f.q}<i class="fa-solid fa-plus"></i></div><div class="faq-a" id="faqA${i}"><p>${f.a}</p></div></div>`;
+});
+function toggleFaq(i){
+  const item = document.querySelectorAll('.faq-item')[i];
+  const body = document.getElementById('faqA'+i);
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach((el,idx)=>{el.classList.remove('open');document.getElementById('faqA'+idx).style.maxHeight=null;});
+  if(!isOpen){item.classList.add('open');body.style.maxHeight=body.scrollHeight+'px';}
+}
+
+/* ============ HERO MEDIA ============ */
+(function(){
+  const heroVisual = document.getElementById('heroVisual');
+  const placeholder = heroVisual.querySelector('.placeholder');
+  const img = document.createElement('img');
+  img.className = 'media-fill';
+  img.alt = 'Vellora hamper — hero banner';
+  img.loading = 'eager';
+  img.src = 'hero-banner.jpg';
+  img.onerror = function(){ img.remove(); }; // keep existing placeholder if file isn't there yet
+  img.onload = function(){ placeholder.remove(); };
+  heroVisual.insertBefore(img, placeholder);
+})();
+
+/* ============ CART / WISHLIST ============ */
+function updateBadges(){
+  document.getElementById('cartBadge').textContent=cart.length;
+  document.getElementById('mCartBadge').textContent=cart.length;
+  document.getElementById('wishBadge').textContent=wishlist.length;
+  document.getElementById('mWishBadge').textContent=wishlist.length;
+}
+function addToCart(id){
+  cart.push(id);
+  updateBadges();
+  renderCart();
+  showToast('Added to your bag');
+}
+function toggleWishlist(id){
+  const idx = wishlist.indexOf(id);
+  if(idx>-1){wishlist.splice(idx,1);showToast('Removed from wishlist');}
+  else{wishlist.push(id);showToast('Added to wishlist');}
+  updateBadges();
+  renderProducts(document.querySelector('.budget-tab.active').dataset.b);
+  renderWishlist();
+}
+function renderCart(){
+  const body = document.getElementById('cartBody');
+  if(cart.length===0){body.innerHTML='<div class="drawer-empty"><i class="fa-solid fa-bag-shopping"></i><p>Your bag is empty</p></div>';document.getElementById('cartTotal').textContent='₹0';return;}
+  let total=0;
+  body.innerHTML = cart.map((id,idx)=>{
+    const p = products.find(x=>x.id===id); total+=p.price;
+    return `<div class="drawer-row"><div class="thumb">${media(p.img,p.name,p.name)}</div><div class="info"><strong>${p.name}</strong><span>₹${p.price.toLocaleString('en-IN')}</span></div><button class="rm" onclick="removeFromCart(${idx})"><i class="fa-solid fa-trash"></i></button></div>`;
+  }).join('');
+  document.getElementById('cartTotal').textContent = '₹'+total.toLocaleString('en-IN');
+}
+function removeFromCart(idx){cart.splice(idx,1);updateBadges();renderCart();}
+function renderWishlist(){
+  const body = document.getElementById('wishlistBody');
+  if(wishlist.length===0){body.innerHTML='<div class="drawer-empty"><i class="fa-solid fa-heart"></i><p>Your wishlist is empty</p></div>';return;}
+  body.innerHTML = wishlist.map(id=>{
+    const p = products.find(x=>x.id===id);
+    return `<div class="drawer-row"><div class="thumb">${media(p.img,p.name,p.name)}</div><div class="info"><strong>${p.name}</strong><span>₹${p.price.toLocaleString('en-IN')}</span></div><button class="rm" onclick="toggleWishlist(${p.id})"><i class="fa-solid fa-trash"></i></button></div>`;
+  }).join('');
+}
+function openDrawer(type){
+  document.getElementById('drawerOverlay').classList.add('show');
+  if(type==='cart'){document.getElementById('cartDrawer').classList.add('show');renderCart();}
+  else{document.getElementById('wishlistDrawer').classList.add('show');renderWishlist();}
+}
+function closeDrawers(){
+  document.getElementById('drawerOverlay').classList.remove('show');
+  document.getElementById('cartDrawer').classList.remove('show');
+  document.getElementById('wishlistDrawer').classList.remove('show');
+}
+
+/* ============ TOAST ============ */
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'),2200);
+}
+
+/* ============ FORMS ============ */
+function handleFormSubmit(e,label){
+  e.preventDefault();
+  showToast(label+" received — we'll be in touch shortly!");
+  e.target.reset();
+  return false;
+}
+function copyRef(){
+  const el = document.getElementById('refLink');
+  el.select();
+  document.execCommand('copy');
+  showToast('Referral link copied');
+}
+
+/* ============ SEARCH ============ */
+function openSearch(){document.getElementById('searchOverlay').classList.add('show');setTimeout(()=>document.getElementById('searchInput').focus(),100);}
+function closeSearch(){document.getElementById('searchOverlay').classList.remove('show');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSearch();closeDrawers();}});
+
+/* ============ MOBILE MENU ============ */
+function toggleMobileMenu(){
+  const m = document.getElementById('mobileMenu');
+  m.style.display = m.style.display==='none' ? 'block' : 'none';
+}
+
+/* ============ AI QUIZ ============ */
+const quizSteps = ['1','2','3','4','5','6','result'];
+let quizIndex = 0;
+const quizAnswers = {};
+document.querySelectorAll('.quiz-options').forEach(group=>{
+  group.addEventListener('click',e=>{
+    const btn = e.target.closest('.quiz-option');
+    if(!btn) return;
+    [...group.children].forEach(c=>c.classList.remove('selected'));
+    btn.classList.add('selected');
+    const labelEl = btn.querySelector('.option-label');
+    quizAnswers[group.dataset.q] = (labelEl ? labelEl.textContent : btn.textContent).trim();
+    document.getElementById('quizNext').disabled = false;
+  });
+});
+function quizMove(dir){
+  if(dir===1 && quizIndex < quizSteps.length-2 && document.getElementById('quizNext').disabled) return;
+  quizIndex = Math.min(Math.max(quizIndex+dir,0), quizSteps.length-1);
+  document.querySelectorAll('.quiz-step').forEach(s=>s.classList.remove('active'));
+  document.querySelector(`.quiz-step[data-step="${quizSteps[quizIndex]}"]`).classList.add('active');
+  document.getElementById('quizFill').style.width = Math.min(((quizIndex+1)/6)*100,100)+'%';
+  document.getElementById('quizBack').style.visibility = quizIndex===0 ? 'hidden':'visible';
+  const isLast = quizIndex===quizSteps.length-1;
+  document.getElementById('quizNav').style.display = isLast ? 'none':'flex';
+  if(quizIndex < quizSteps.length-1){
+    const currentQ = document.querySelector(`.quiz-step[data-step="${quizSteps[quizIndex]}"] .quiz-options`)?.dataset.q;
+    document.getElementById('quizNext').disabled = currentQ ? !quizAnswers[currentQ] : false;
+    document.getElementById('quizNext').textContent = quizIndex===quizSteps.length-2 ? 'See My Match' : 'Next';
+  }
+  if(isLast){
+    document.getElementById('quizResultText').textContent = `For a ${quizAnswers.occasion||'special'} occasion for your ${(quizAnswers.recipient||'loved one').toLowerCase()}, within ${quizAnswers.budget||'your budget'}, we recommend a ${(quizAnswers.theme||'signature').toLowerCase()} themed hamper — ${quizAnswers.personalize||'personalized'}, ready for delivery ${(quizAnswers.delivery||'on your date').toLowerCase()}.`;
+  }
+}
+function restartQuiz(){
+  quizIndex=0;
+  Object.keys(quizAnswers).forEach(k=>delete quizAnswers[k]);
+  document.querySelectorAll('.quiz-option').forEach(o=>o.classList.remove('selected'));
+  document.querySelectorAll('.quiz-step').forEach(s=>s.classList.remove('active'));
+  document.querySelector('.quiz-step[data-step="1"]').classList.add('active');
+  document.getElementById('quizFill').style.width='16.6%';
+  document.getElementById('quizNav').style.display='flex';
+  document.getElementById('quizBack').style.visibility='hidden';
+  document.getElementById('quizNext').disabled=true;
+  document.getElementById('quizNext').textContent='Next';
+}
+
+/* ============ SCROLL EFFECTS ============ */
+const navEl = document.getElementById('mainNav');
+const backTop = document.getElementById('backToTop');
+window.addEventListener('scroll',()=>{
+  const y = window.scrollY;
+  navEl.classList.toggle('scrolled', y>40);
+  backTop.classList.toggle('show', y>500);
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  document.getElementById('scrollProgress').style.width = (y/h*100)+'%';
+});
+
+/* reveal on scroll */
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:0.12});
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(el=>io.observe(el));
+
+updateBadges();
+</script>
+</body>
+</html>
